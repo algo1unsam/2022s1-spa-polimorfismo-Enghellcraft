@@ -1,0 +1,10 @@
+import personas.*
+import spa.*
+
+test "Ramiro en el Spa" {
+	assert.that(ramiro.comoTieneLaPiel())
+	assert.equals(0, ramiro.cuantaContractura())
+	spa.atenderPersona(ramiro)
+	assert.notThat(ramiro.comoTieneLaPiel())
+	assert.equals(0, ramiro.cuantaContractura())
+}
